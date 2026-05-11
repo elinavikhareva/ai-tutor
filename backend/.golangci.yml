@@ -1,0 +1,36 @@
+version: "2"
+
+linters:
+  enable:
+    - bodyclose
+    - errorlint
+    - gocritic
+    - misspell
+    - noctx
+    - revive
+    - unconvert
+    - unparam
+    - usestdlibvars
+    - wastedassign
+  settings:
+    revive:
+      rules:
+        - name: exported
+          disabled: true
+  exclusions:
+    presets:
+      - std-error-handling
+    rules:
+      # Test helpers close response bodies via t.Cleanup.
+      - path: _test\.go
+        linters:
+          - bodyclose
+
+formatters:
+  enable:
+    - gofmt
+    - goimports
+  settings:
+    goimports:
+      local-prefixes:
+        - github.com/elinavikhareva/ai-tutor

@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-cream: #f7f1e4;
+  --color-paper: #fdfbf6;
+  --color-ink: #2b2723;
+  --color-accent: #e7ecfb;
+  --color-muted: #8a7f6a;
+  --color-muted-dark: #6f6656;
+  --color-muted-light: #a89a80;
+  --color-depth-inactive: #f3eee2;
+  --color-disabled: #d8d1c2;
+
+  --font-serif-display: 'Playfair Display', serif;
+  --font-hand: 'Caveat', cursive;
+  --font-sans: 'Manrope', sans-serif;
+}

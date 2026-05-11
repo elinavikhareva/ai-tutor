@@ -1,0 +1,22 @@
+# Go
+*.exe
+*.test
+*.out
+coverage.*
+backend/bin/
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Editors / OS
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+
+# Frontend
+node_modules/
+frontend/dist/
+frontend/dev-dist/
